@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <style>
+        body {
+            font-family: "Trirong", serif;
+        }
+    </style>
+</head>
+
+<body> <div class="navbar">
+            <h1>Random Password Generator</h1>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        </div>
+    <div class="container">
+       
+        <div class="box">
+
+            <span id="pass-box">Generated Password</span>
+
+            <div class="row">
+                <div class="left">
+                    Password Length:
+                </div>
+                <div class="right">
+                    <input type="number" name="" id="total-char" max="20" min="2" value="10" />
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="upper-case">
+                    <div class="left">
+                        Contains Upper Case:
+                    </div>
+                </label>
+                <div class="right">
+                    <input type="checkbox" name="" id="upper-case" checked />
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="lower-case">
+                    <div class="left">
+                        Contains Lower Case:
+                    </div>
+                </label>
+                <div class="right">
+                    <input type="checkbox" name="" id="lower-case" checked />
+                </div>
+            </div>
+            <div class="row">
+                <label for="number-case">
+                    <div class="left">
+                        Contains Number Case:
+                    </div>
+                </label>
+                <div class="right">
+                    <input type="checkbox" name="" id="number-case" checked />
+                </div>
+            </div>
+            <div class="row">
+                <label for="symbol-case">
+                    <div class="left">
+                        Contains Symbol Case:
+                    </div>
+                </label>
+                <div class="right">
+                    <input type="checkbox" name="" id="symbol-case" checked />
+                </div>
+            </div>
+            <div class="row">
+                <button id="btn">Generate Password</button>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <h2>copyright &copy; Random Password Generator All rights reserved</h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
